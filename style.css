@@ -9,10 +9,7 @@
 #container img{
     position: relative;
 }
-#container{
-    width: 100%;
-    height: 100%;
-}
+
 #info{
     height:10%;
     width: 35%;
@@ -20,3 +17,40 @@
     top:45%;
     left: 15%;
 }
+#competences{
+    display:flex;
+    color:grey;
+}
+.auto{
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+.presentation{
+    height: auto;
+    position: absolute;
+    top: 13%;
+    width: 80%;
+}
+.competences{
+    height: auto;
+    position: absolute;
+    bottom: 10%;
+}
+.auto h1,.auto h4{
+    color:rgba(0, 0, 0, 0.7)
+}
+#left, #right{
+    position: relative;
+}
+p{
+    line-height: 170%;
+}
+.competences p{
+    margin-bottom: 2%;
+}
+progress[value] {
+    width: 250px;
+    height: 5px;
+  }

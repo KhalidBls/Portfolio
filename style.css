@@ -21,7 +21,7 @@ a{
 #logos{
     display: flex;
     position:absolute;
-    top:45%;
+    top:30%;
     left: 60%;
     height: auto;
     width: auto;
@@ -75,28 +75,30 @@ progress[value] {
       background-color: rgb(250, 250, 250);
       position: relative;
       color: grey;
+      height: 200%;
   }
 #titleExp{
     width: 50%;
     height: auto;
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 25%;
 }
 #titleExp h1,.work h1{
     color:rgba(0, 0, 0, 0.7);
 }
 #projets{
-    height: 45%;
+    height: auto;
     position: absolute;
-    top: 35%;
+    top: 22%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .work{
     background-color: white;
     width: 30%;
-    margin: auto 3%;
+    margin: 3% 3%;
     position: relative;
 }
 .work h1{
@@ -104,3 +106,27 @@ progress[value] {
     height: auto;
 }
 
+@media screen and (max-width: 600px)
+{
+    #logos{
+        left: 50%;
+    }
+}
+@media screen and (max-width: 850px)
+{
+    #competences{
+        flex-direction: column;
+    }
+    .left{
+        padding-top: 30px;
+        height: 100px;
+    }
+    #projets{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+    .work{
+        margin-bottom: 40px;
+    }
+}

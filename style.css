@@ -6,7 +6,18 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-#container img{
+#moi{
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    border-radius: 50%;
+    left: 60%;
+    bottom: 30%;
+}
+.left{
+    color: black;
+}
+#container #back{
     position: relative;
 }
 a{
@@ -36,7 +47,6 @@ a{
 #competences{
     display:flex;
     color:grey;
-    height: 115%;
 }
 .auto{
     height: auto;
@@ -54,9 +64,7 @@ a{
 .skills{
     height: auto;
 }
-.auto h1{
-    color:rgba(0, 0, 0, 0.7)
-}
+
 .left, #right{
     position: relative;
 }
@@ -93,7 +101,6 @@ progress[value] {
     top: 22%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 .work{
     background-color: white;
